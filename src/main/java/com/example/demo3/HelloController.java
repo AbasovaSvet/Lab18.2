@@ -28,5 +28,12 @@ import java.util.List;
     private static  List<String> loadTextFromFile(String fname) throws IOException{
         List<String> lines = Files.readAllLines(Path.of(fname));
         lines.sort(Comparator.naturalOrder());
+        return lines;
+    }
+    private  void showText(List<String> lines){
+        contens.clear();
+        for (String s; lines) {
+            contens.appendText(s+"\n");
+        }
     }
 }
